@@ -1,0 +1,649 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+/* ####################################### Utility Classes ######################## */
+
+.container
+{
+    max-width: 1200px;
+    width:90%;
+    margin: auto;
+}
+
+.button
+{
+    display: inline-block;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+    margin-top:1em;
+    text-transform: uppercase;
+}
+
+.button-primary
+{
+    color:white;
+    background:#16a083;
+}
+
+/* #################################### Navbar Styling ########################### */
+
+/*For Desktop Mode*/
+
+.navbar input[type="checkbox"], .navbar .hamburger-lines
+{
+    display: none;
+}
+
+.navbar
+{
+    box-shadow: 0px 5px 10px 0px grey;
+    position: fixed;
+    width:100%;
+    background:cornsilk;
+    color:darkmagenta;
+    opacity:0.80;
+    z-index: 100;
+}
+
+.navbar-container
+{
+    display:flex;
+    justify-content: space-between;
+    height:64px;
+    align-items: center;
+}
+
+.menu-items
+{
+    order:2;
+    display: flex;
+}
+
+.menu-items li
+{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.menu-items li a
+{
+    text-decoration: none;
+    font-weight: 500;
+    color:orangered;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-items li a:hover
+{
+    color:green;
+}
+.logo
+{
+    order:1;
+    font-size: 3rem;
+}
+
+
+/* ##############################SHOWCASE STYLING ################################# */
+
+.showcase-area
+{
+    height: 50vh;
+    background:linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)),url("../Images/Love.PNG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.showcase-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.9rem;
+    color:white;
+}
+
+.main-title
+{
+    margin-bottom: 1rem;
+}
+
+
+/* ##################################Love Section####################################### */
+
+#love
+{
+    padding: 50px 0px;
+    /* background:#ffb6c1; */
+}
+
+.love-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#love .love-text
+{
+    font-size:1.9rem;
+    color:red;
+}
+
+.love-text h2
+{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.love-text p
+{
+    margin-bottom: 1rem;
+}
+
+#love .love-image
+{
+    /* border:20px solid green; */
+    flex: 1 1 400px;
+    /* padding: 30px; */
+}
+
+#love .love-text
+{
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+}
+
+.love-image img
+{
+    display: block;
+    height:400px;
+    max-width: 100%;
+    margin:auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* ##################################Gallery Section################# */
+
+#gallery
+{
+
+    padding: 5rem 0 10rem;
+}
+
+#gallery h2
+{
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color:green;
+}
+
+.gallery-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-container img
+{
+    display: block;
+    width: 100%;
+    margin:auto;
+    max-height: 300px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.image-container
+{
+    margin:0 1rem;
+    position:relative;
+}
+
+.image-content
+{
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+.image-content h3
+{
+    color:red;
+    font-size: 1.9rem;
+}
+
+.image-content a
+{
+    font-size:1.9rem;
+}
+
+/* .image-container::after
+{
+    content:"";
+    display:block;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: rgba(0,0,0,0.871);
+    /* opacity: 0; */
+    /* z-index: 1;
+    transform: scaleY(0);
+    transform-origin: 100% 100%;
+    transition: all 0.3s ease-in-out;
+} */
+
+/* .image-container:hover::after
+{
+    opacity: 1;
+    transform:scaleY(1);
+} */
+
+/* .image-container:hover .image-content
+{
+    opacity:1;
+    top:40%;
+} */ 
+
+
+/* ############################Famous Couples############################# */
+
+.famous-couples-heading
+{
+    font-size:1.9rem;
+    text-align: center;
+    color:darkviolet;
+    font-weight:600;
+}
+
+.famous-couples-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px 30px 0px;
+}
+
+.each-famous-couple
+{
+    display: flex;
+}
+
+.famous-couples-container img
+{
+    display: block;
+    border-radius: 70%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.couple-description
+{
+    margin: auto;
+}
+
+.couple-description p
+{
+    font-size: 1.9rem;
+    color:orangered;
+    font-style:oblique;
+    margin: auto 1.2rem;
+}
+
+.each-famous-couple
+{
+    margin-bottom: 5rem;
+}
+
+
+/* ######################################Testimonial############################# */
+
+#testimonials
+{
+    padding: 5rem 0rem;
+    /* background: rgb(243, 243, 243); */
+}
+
+.testimonial-title
+{
+    text-align: center;
+    color:chocolate;
+    font-weight: 600;
+    font-size: 1.9rem;
+    margin-bottom: 3rem;
+}
+
+.testimonial-container
+{
+    display: flex;
+    /* flex-wrap: wrap; */
+    font-size: 1.9rem;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.testimonial-container .checked
+{
+    color:gold;
+}
+
+.testimonial-box .testimonial-text
+{
+    margin: 1rem 0;
+}
+
+.testimonial-box
+{
+    text-align: center;
+
+}
+
+.customer-photo img
+{
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+}
+
+/* ###################################Contact################################ */
+
+#contact
+{
+    padding: 5rem 0;
+    /* background: rgb(223, 223, 223); */
+}
+
+.contact-container
+{
+    display: flex;
+}
+
+.contact-image
+{
+    width:50%;
+
+}
+
+.contact-image img
+{
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width:100%;
+}
+
+.form-container
+{
+    width:50%;
+    padding: 1rem;
+
+}
+
+.form-container input
+{
+    display: block;
+    width:100%;
+    border:none;
+    border-bottom: 2px solid black;
+    padding: 1rem;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    font-weight:500;
+}
+
+.form-container textarea
+{
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 2px solid black;
+
+}
+
+.form-container h2
+{
+    font-size:1.9rem;
+    text-transform: uppercase;
+    font-weight:600;
+    margin-bottom: 1rem;
+}
+
+.form-container a
+{
+    font-size:1.2rem;
+}
+
+/* ###################################Footer############################ */
+
+#footer
+{
+    text-align: center;
+    font-size:0.8rem;
+    background-color: black;
+    color:white;
+    padding:2rem;
+
+}
+
+/* ################################Media Queries######################### */
+
+@media (max-width:768px)
+{
+    .navbar
+    {
+        opacity:0.95;
+
+    }
+
+    .navbar-container input[type="checkbox"], 
+    .navbar-container .hamburger-lines
+    {
+        display: block;
+    }
+
+    .navbar-container
+    {
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]
+    {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width:40px;
+        top:20px;
+        left:20px;
+        z-index: 5;
+        opacity:0;
+    }
+
+    .navbar-container .hamburger-lines
+    {
+        display:block;
+        height:32px;
+        width:40px;
+        position:absolute;
+        top:20px;
+        left:20px;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line 
+    {
+        display: block;
+        height:4px;
+        width:100%;
+        border-radius: 10px;
+        background:#333;
+
+    }
+
+    .navbar-container .hamburger-lines .line1
+    {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2
+    {
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3
+    {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .navbar .menu-items
+    {
+        padding-top: 100px;
+        background: #fff;
+        height:100vh;
+        max-width:300px;
+        transform:translateX(-150%);
+        display:flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+
+    }
+
+    .navbar .menu-items li 
+    {
+        margin-bottom: 3rem;
+        font-size:2rem;
+        font-weight:600;
+    }
+
+    .logo
+    {
+        position: absolute;
+        top:10px;
+        right:15px;
+        font-size: 3rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items
+    {
+        transform:translateX(0);
+
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1
+    {
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2
+    {
+        transform: scaleY(0);
+    }
+    
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3
+    {
+        transform: rotate(-45deg);
+    }
+    
+}
+
+/* #############################Small Screen############################# */
+
+@media (max:width:500px)
+{
+    html 
+    {
+        font-size:50%;
+    }
+
+    .testimonial-container
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .each-famous-couple
+    {
+        flex-direction: column;
+        text-align:center;
+    }
+
+    .couple-image img 
+    {
+        margin: auto;
+    }
+    
+    .form-container
+    {
+        width:90%;
+    }
+
+    .contact-container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-image
+    {
+        width:90%;
+        margin:3rem auto;
+    }
+}
